@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
 *{
-  margin:0;
-  padding:0;
   box-sizing:border-box;
   scroll-behavior:smooth;
 }
@@ -76,6 +74,7 @@ body{
 .signature {
   width: 100px; 
   height:auto; 
+  border-radius: 50%;
   margin-right: 10px; 
 }
 
@@ -237,6 +236,9 @@ profile-photo .img{
 
 /*---------------------------Education & Internship---------------------------*/
 
+.education-content {    
+  color: #fff;
+}
 .education-content .row{
   display: flex;
   border-radius: 5px;
@@ -342,7 +344,7 @@ profile-photo .img{
 }
 .projects{
   display: flex;
-  justify-content:space-between;
+  justify-content:space-around;
   flex-wrap: wrap;
 }
 .project{
@@ -531,4 +533,148 @@ profile-photo .img{
     margin-bottom: 30px;
   }
 
+}
+/* Career Section Styles */
+.career-section {
+  padding: 100px 0;
+  background-color: #202020;
+  color: #fff;
+}
+.career-section h2, .career-section h3 {
+  text-align: center;
+  color: #fed700;
+}
+.work-experience, .projects-career, .publications {
+  margin: 30px 0;
+}
+.experience-item, .project-item, .publication-item {
+  margin-bottom: 20px;
+}
+.experience-item h4, .project-item h4, .publication-item h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.experience-item ul, .project-item ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+/* Existing CSS code... */
+
+/* Career Section Styles */
+.career-section {
+  padding: 100px 0;
+  background-color: #202020;
+  color: #fff;
+}
+.career-section h2,
+.career-section h3 {
+  text-align: center;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+.work-experience,
+.projects-career,
+.publications {
+  margin: 30px 0;
+}
+.experience-item,
+.project-item,
+.publication-item {
+  margin-bottom: 20px;
+}
+.experience-item h4,
+.project-item h4,
+.publication-item h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.experience-item ul,
+.project-item ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+/* About Timeline Section */
+.about-timeline {
+  padding: 100px 0;
+  background-color: #202020;
+  color: #fff;
+}
+.about-timeline h2 {
+  text-align: center;
+  color: #fed700;
+  margin-bottom: 40px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  /* max-width: 800px; */
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #fed700;
+  transform: translateX(-50%);
+}
+
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+/* Date marker */
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Content container */
+.timeline-content {
+  background: #333;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Timeline dot for odd items */
+.timeline-item:nth-child(odd):before {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: #fed700;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+/* Timeline dot for even items */
+.timeline-item:nth-child(even):before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: #fed700;
+  border-radius: 50%;
+  border: 2px solid #333;
 }
